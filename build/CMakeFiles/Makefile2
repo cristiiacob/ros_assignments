@@ -294,11 +294,16 @@ ros_assignments/all: ros_assignments/CMakeFiles/constant_changer.dir/all
 ros_assignments/all: ros_assignments/CMakeFiles/constant_generator.dir/all
 ros_assignments/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/all
 ros_assignments/all: ros_assignments/CMakeFiles/square_generator.dir/all
+ros_assignments/all: ros_assignments/CMakeFiles/state_machine.dir/all
+ros_assignments/all: ros_assignments/CMakeFiles/state_machine_input.dir/all
+ros_assignments/all: ros_assignments/CMakeFiles/state_machine_querry.dir/all
 ros_assignments/all: ros_assignments/CMakeFiles/triangle_generator.dir/all
 .PHONY : ros_assignments/all
 
 # Convenience name for "clean" pass in the directory.
+ros_assignments/clean: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/clean
+ros_assignments/clean: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/averager.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/constant_changer.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/constant_generator.dir/clean
@@ -316,6 +321,9 @@ ros_assignments/clean: ros_assignments/CMakeFiles/rosgraph_msgs_generate_message
 ros_assignments/clean: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/square_generator.dir/clean
+ros_assignments/clean: ros_assignments/CMakeFiles/state_machine.dir/clean
+ros_assignments/clean: ros_assignments/CMakeFiles/state_machine_input.dir/clean
+ros_assignments/clean: ros_assignments/CMakeFiles/state_machine_querry.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 ros_assignments/clean: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/clean
@@ -325,6 +333,37 @@ ros_assignments/clean: ros_assignments/CMakeFiles/triangle_generator.dir/clean
 # Convenience name for "preinstall" pass in the directory.
 ros_assignments/preinstall:
 .PHONY : ros_assignments/preinstall
+
+#=============================================================================
+# Target rules for target ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir
+
+# All Build rule for target.
+ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/all:
+	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/depend
+	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles 
+	@echo "Built target _ros_assignments_generate_messages_check_deps_InputService"
+.PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/all
+
+# Build rule for subdir invocation for target.
+ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
+.PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/rule
+
+# Convenience name for target.
+_ros_assignments_generate_messages_check_deps_InputService: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/rule
+.PHONY : _ros_assignments_generate_messages_check_deps_InputService
+
+# clean rule for target.
+ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/clean:
+	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/clean
+.PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/clean
+
+# clean rule for target.
+clean: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/clean
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir
@@ -358,21 +397,52 @@ clean: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir
+
+# All Build rule for target.
+ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/all:
+	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/depend
+	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles 
+	@echo "Built target _ros_assignments_generate_messages_check_deps_StateService"
+.PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/all
+
+# Build rule for subdir invocation for target.
+ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
+.PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/rule
+
+# Convenience name for target.
+_ros_assignments_generate_messages_check_deps_StateService: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/rule
+.PHONY : _ros_assignments_generate_messages_check_deps_StateService
+
+# clean rule for target.
+ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/clean:
+	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/clean
+.PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/clean
+
+# clean rule for target.
+clean: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target ros_assignments/CMakeFiles/averager.dir
 
 # All Build rule for target.
-ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/averager.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/averager.dir/build.make ros_assignments/CMakeFiles/averager.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/averager.dir/build.make ros_assignments/CMakeFiles/averager.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  1
@@ -385,7 +455,7 @@ all: ros_assignments/CMakeFiles/averager.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/averager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/averager.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/averager.dir/rule
@@ -407,18 +477,18 @@ clean: ros_assignments/CMakeFiles/averager.dir/clean
 # Target rules for target ros_assignments/CMakeFiles/constant_changer.dir
 
 # All Build rule for target.
-ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/constant_changer.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/constant_changer.dir/build.make ros_assignments/CMakeFiles/constant_changer.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/constant_changer.dir/build.make ros_assignments/CMakeFiles/constant_changer.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  2
@@ -431,7 +501,7 @@ all: ros_assignments/CMakeFiles/constant_changer.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/constant_changer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/constant_changer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/constant_changer.dir/rule
@@ -453,18 +523,18 @@ clean: ros_assignments/CMakeFiles/constant_changer.dir/clean
 # Target rules for target ros_assignments/CMakeFiles/constant_generator.dir
 
 # All Build rule for target.
-ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/constant_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/constant_generator.dir/build.make ros_assignments/CMakeFiles/constant_generator.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/constant_generator.dir/build.make ros_assignments/CMakeFiles/constant_generator.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  3
@@ -477,7 +547,7 @@ all: ros_assignments/CMakeFiles/constant_generator.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/constant_generator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/constant_generator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/constant_generator.dir/rule
@@ -508,7 +578,7 @@ ros_assignments/CMakeFiles/ros_assignments_gencpp.dir/all: ros_assignments/CMake
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/ros_assignments_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/ros_assignments_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_gencpp.dir/rule
@@ -530,9 +600,9 @@ clean: ros_assignments/CMakeFiles/ros_assignments_gencpp.dir/clean
 # Target rules for target ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir
 
 # All Build rule for target.
+ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
-ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/build.make ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/build.make ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles 
@@ -545,7 +615,7 @@ all: ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/rule
@@ -567,17 +637,19 @@ clean: ros_assignments/CMakeFiles/ros_assignments_generate_messages.dir/clean
 # Target rules for target ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir
 
 # All Build rule for target.
-ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/all
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/build.make ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/build.make ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  6 7 8
 	@echo "Built target ros_assignments_generate_messages_cpp"
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/rule
@@ -599,17 +671,19 @@ clean: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/clea
 # Target rules for target ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir
 
 # All Build rule for target.
-ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/all
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/build.make ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/build.make ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  9 10 11
 	@echo "Built target ros_assignments_generate_messages_lisp"
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/rule
@@ -631,17 +705,19 @@ clean: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/cle
 # Target rules for target ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir
 
 # All Build rule for target.
-ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/all
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/build.make ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/build.make ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  8 9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  12 13 14 15
 	@echo "Built target ros_assignments_generate_messages_py"
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/rule
@@ -672,7 +748,7 @@ ros_assignments/CMakeFiles/ros_assignments_genlisp.dir/all: ros_assignments/CMak
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/ros_assignments_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/ros_assignments_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_genlisp.dir/rule
@@ -703,7 +779,7 @@ ros_assignments/CMakeFiles/ros_assignments_genpy.dir/all: ros_assignments/CMakeF
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/ros_assignments_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/ros_assignments_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/ros_assignments_genpy.dir/rule
@@ -911,21 +987,21 @@ clean: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 # Target rules for target ros_assignments/CMakeFiles/square_generator.dir
 
 # All Build rule for target.
-ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/square_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/square_generator.dir/build.make ros_assignments/CMakeFiles/square_generator.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/square_generator.dir/build.make ros_assignments/CMakeFiles/square_generator.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  16
 	@echo "Built target square_generator"
 .PHONY : ros_assignments/CMakeFiles/square_generator.dir/all
 
@@ -935,7 +1011,7 @@ all: ros_assignments/CMakeFiles/square_generator.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/square_generator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/square_generator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/square_generator.dir/rule
@@ -951,6 +1027,144 @@ ros_assignments/CMakeFiles/square_generator.dir/clean:
 
 # clean rule for target.
 clean: ros_assignments/CMakeFiles/square_generator.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ros_assignments/CMakeFiles/state_machine.dir
+
+# All Build rule for target.
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine.dir/build.make ros_assignments/CMakeFiles/state_machine.dir/depend
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine.dir/build.make ros_assignments/CMakeFiles/state_machine.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  17
+	@echo "Built target state_machine"
+.PHONY : ros_assignments/CMakeFiles/state_machine.dir/all
+
+# Include target in all.
+all: ros_assignments/CMakeFiles/state_machine.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ros_assignments/CMakeFiles/state_machine.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/state_machine.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
+.PHONY : ros_assignments/CMakeFiles/state_machine.dir/rule
+
+# Convenience name for target.
+state_machine: ros_assignments/CMakeFiles/state_machine.dir/rule
+.PHONY : state_machine
+
+# clean rule for target.
+ros_assignments/CMakeFiles/state_machine.dir/clean:
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine.dir/build.make ros_assignments/CMakeFiles/state_machine.dir/clean
+.PHONY : ros_assignments/CMakeFiles/state_machine.dir/clean
+
+# clean rule for target.
+clean: ros_assignments/CMakeFiles/state_machine.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ros_assignments/CMakeFiles/state_machine_input.dir
+
+# All Build rule for target.
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine_input.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine_input.dir/build.make ros_assignments/CMakeFiles/state_machine_input.dir/depend
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine_input.dir/build.make ros_assignments/CMakeFiles/state_machine_input.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  18
+	@echo "Built target state_machine_input"
+.PHONY : ros_assignments/CMakeFiles/state_machine_input.dir/all
+
+# Include target in all.
+all: ros_assignments/CMakeFiles/state_machine_input.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ros_assignments/CMakeFiles/state_machine_input.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/state_machine_input.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
+.PHONY : ros_assignments/CMakeFiles/state_machine_input.dir/rule
+
+# Convenience name for target.
+state_machine_input: ros_assignments/CMakeFiles/state_machine_input.dir/rule
+.PHONY : state_machine_input
+
+# clean rule for target.
+ros_assignments/CMakeFiles/state_machine_input.dir/clean:
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine_input.dir/build.make ros_assignments/CMakeFiles/state_machine_input.dir/clean
+.PHONY : ros_assignments/CMakeFiles/state_machine_input.dir/clean
+
+# clean rule for target.
+clean: ros_assignments/CMakeFiles/state_machine_input.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target ros_assignments/CMakeFiles/state_machine_querry.dir
+
+# All Build rule for target.
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/state_machine_querry.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine_querry.dir/build.make ros_assignments/CMakeFiles/state_machine_querry.dir/depend
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine_querry.dir/build.make ros_assignments/CMakeFiles/state_machine_querry.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  19
+	@echo "Built target state_machine_querry"
+.PHONY : ros_assignments/CMakeFiles/state_machine_querry.dir/all
+
+# Include target in all.
+all: ros_assignments/CMakeFiles/state_machine_querry.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+ros_assignments/CMakeFiles/state_machine_querry.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/state_machine_querry.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
+.PHONY : ros_assignments/CMakeFiles/state_machine_querry.dir/rule
+
+# Convenience name for target.
+state_machine_querry: ros_assignments/CMakeFiles/state_machine_querry.dir/rule
+.PHONY : state_machine_querry
+
+# clean rule for target.
+ros_assignments/CMakeFiles/state_machine_querry.dir/clean:
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine_querry.dir/build.make ros_assignments/CMakeFiles/state_machine_querry.dir/clean
+.PHONY : ros_assignments/CMakeFiles/state_machine_querry.dir/clean
+
+# clean rule for target.
+clean: ros_assignments/CMakeFiles/state_machine_querry.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -1050,21 +1264,21 @@ clean: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 # Target rules for target ros_assignments/CMakeFiles/triangle_generator.dir
 
 # All Build rule for target.
-ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/roscpp_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_py.dir/all
-ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/all
 ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros_assignments/CMakeFiles/triangle_generator.dir/all: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/all
 	$(MAKE) -f ros_assignments/CMakeFiles/triangle_generator.dir/build.make ros_assignments/CMakeFiles/triangle_generator.dir/depend
 	$(MAKE) -f ros_assignments/CMakeFiles/triangle_generator.dir/build.make ros_assignments/CMakeFiles/triangle_generator.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles  20
 	@echo "Built target triangle_generator"
 .PHONY : ros_assignments/CMakeFiles/triangle_generator.dir/all
 
@@ -1074,7 +1288,7 @@ all: ros_assignments/CMakeFiles/triangle_generator.dir/all
 
 # Build rule for subdir invocation for target.
 ros_assignments/CMakeFiles/triangle_generator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/triangle_generator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cristi/assignments/build/CMakeFiles 0
 .PHONY : ros_assignments/CMakeFiles/triangle_generator.dir/rule

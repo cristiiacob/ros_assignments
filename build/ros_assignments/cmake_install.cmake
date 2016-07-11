@@ -33,7 +33,11 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_assignments/srv" TYPE FILE FILES "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_assignments/srv" TYPE FILE FILES
+    "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv"
+    "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv"
+    "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv"
+    )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

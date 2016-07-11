@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv"
+services_str = "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv;/home/cristi/assignments/src/ros_assignments/srv/InputService.srv;/home/cristi/assignments/src/ros_assignments/srv/StateService.srv"
 pkg_name = "ros_assignments"
 dependencies_str = "std_msgs"
 langs = "gencpp;genlisp;genpy"

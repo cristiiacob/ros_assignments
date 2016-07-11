@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/rule:
+	cd /home/cristi/assignments/build && $(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/rule
+.PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/rule
+
+# Convenience name for target.
+_ros_assignments_generate_messages_check_deps_InputService: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/rule
+.PHONY : _ros_assignments_generate_messages_check_deps_InputService
+
+# fast build rule for target.
+_ros_assignments_generate_messages_check_deps_InputService/fast:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/build
+.PHONY : _ros_assignments_generate_messages_check_deps_InputService/fast
+
+# Convenience name for target.
 ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/rule:
 	cd /home/cristi/assignments/build && $(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/rule
 .PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/rule
@@ -162,6 +176,20 @@ _ros_assignments_generate_messages_check_deps_ServiceCall: ros_assignments/CMake
 _ros_assignments_generate_messages_check_deps_ServiceCall/fast:
 	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/build
 .PHONY : _ros_assignments_generate_messages_check_deps_ServiceCall/fast
+
+# Convenience name for target.
+ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/rule:
+	cd /home/cristi/assignments/build && $(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/rule
+.PHONY : ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/rule
+
+# Convenience name for target.
+_ros_assignments_generate_messages_check_deps_StateService: ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/rule
+.PHONY : _ros_assignments_generate_messages_check_deps_StateService
+
+# fast build rule for target.
+_ros_assignments_generate_messages_check_deps_StateService/fast:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/build
+.PHONY : _ros_assignments_generate_messages_check_deps_StateService/fast
 
 # Convenience name for target.
 ros_assignments/CMakeFiles/averager.dir/rule:
@@ -402,6 +430,48 @@ square_generator/fast:
 .PHONY : square_generator/fast
 
 # Convenience name for target.
+ros_assignments/CMakeFiles/state_machine.dir/rule:
+	cd /home/cristi/assignments/build && $(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/state_machine.dir/rule
+.PHONY : ros_assignments/CMakeFiles/state_machine.dir/rule
+
+# Convenience name for target.
+state_machine: ros_assignments/CMakeFiles/state_machine.dir/rule
+.PHONY : state_machine
+
+# fast build rule for target.
+state_machine/fast:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine.dir/build.make ros_assignments/CMakeFiles/state_machine.dir/build
+.PHONY : state_machine/fast
+
+# Convenience name for target.
+ros_assignments/CMakeFiles/state_machine_input.dir/rule:
+	cd /home/cristi/assignments/build && $(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/state_machine_input.dir/rule
+.PHONY : ros_assignments/CMakeFiles/state_machine_input.dir/rule
+
+# Convenience name for target.
+state_machine_input: ros_assignments/CMakeFiles/state_machine_input.dir/rule
+.PHONY : state_machine_input
+
+# fast build rule for target.
+state_machine_input/fast:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine_input.dir/build.make ros_assignments/CMakeFiles/state_machine_input.dir/build
+.PHONY : state_machine_input/fast
+
+# Convenience name for target.
+ros_assignments/CMakeFiles/state_machine_querry.dir/rule:
+	cd /home/cristi/assignments/build && $(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/state_machine_querry.dir/rule
+.PHONY : ros_assignments/CMakeFiles/state_machine_querry.dir/rule
+
+# Convenience name for target.
+state_machine_querry: ros_assignments/CMakeFiles/state_machine_querry.dir/rule
+.PHONY : state_machine_querry
+
+# fast build rule for target.
+state_machine_querry/fast:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine_querry.dir/build.make ros_assignments/CMakeFiles/state_machine_querry.dir/build
+.PHONY : state_machine_querry/fast
+
+# Convenience name for target.
 ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
 	cd /home/cristi/assignments/build && $(MAKE) -f CMakeFiles/Makefile2 ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : ros_assignments/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
@@ -553,6 +623,78 @@ src/ros_assignments/square_generator.cpp.s:
 	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/square_generator.dir/build.make ros_assignments/CMakeFiles/square_generator.dir/src/ros_assignments/square_generator.cpp.s
 .PHONY : src/ros_assignments/square_generator.cpp.s
 
+src/ros_assignments/state_machine.o: src/ros_assignments/state_machine.cpp.o
+.PHONY : src/ros_assignments/state_machine.o
+
+# target to build an object file
+src/ros_assignments/state_machine.cpp.o:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine.dir/build.make ros_assignments/CMakeFiles/state_machine.dir/src/ros_assignments/state_machine.cpp.o
+.PHONY : src/ros_assignments/state_machine.cpp.o
+
+src/ros_assignments/state_machine.i: src/ros_assignments/state_machine.cpp.i
+.PHONY : src/ros_assignments/state_machine.i
+
+# target to preprocess a source file
+src/ros_assignments/state_machine.cpp.i:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine.dir/build.make ros_assignments/CMakeFiles/state_machine.dir/src/ros_assignments/state_machine.cpp.i
+.PHONY : src/ros_assignments/state_machine.cpp.i
+
+src/ros_assignments/state_machine.s: src/ros_assignments/state_machine.cpp.s
+.PHONY : src/ros_assignments/state_machine.s
+
+# target to generate assembly for a file
+src/ros_assignments/state_machine.cpp.s:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine.dir/build.make ros_assignments/CMakeFiles/state_machine.dir/src/ros_assignments/state_machine.cpp.s
+.PHONY : src/ros_assignments/state_machine.cpp.s
+
+src/ros_assignments/state_machine_input.o: src/ros_assignments/state_machine_input.cpp.o
+.PHONY : src/ros_assignments/state_machine_input.o
+
+# target to build an object file
+src/ros_assignments/state_machine_input.cpp.o:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine_input.dir/build.make ros_assignments/CMakeFiles/state_machine_input.dir/src/ros_assignments/state_machine_input.cpp.o
+.PHONY : src/ros_assignments/state_machine_input.cpp.o
+
+src/ros_assignments/state_machine_input.i: src/ros_assignments/state_machine_input.cpp.i
+.PHONY : src/ros_assignments/state_machine_input.i
+
+# target to preprocess a source file
+src/ros_assignments/state_machine_input.cpp.i:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine_input.dir/build.make ros_assignments/CMakeFiles/state_machine_input.dir/src/ros_assignments/state_machine_input.cpp.i
+.PHONY : src/ros_assignments/state_machine_input.cpp.i
+
+src/ros_assignments/state_machine_input.s: src/ros_assignments/state_machine_input.cpp.s
+.PHONY : src/ros_assignments/state_machine_input.s
+
+# target to generate assembly for a file
+src/ros_assignments/state_machine_input.cpp.s:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine_input.dir/build.make ros_assignments/CMakeFiles/state_machine_input.dir/src/ros_assignments/state_machine_input.cpp.s
+.PHONY : src/ros_assignments/state_machine_input.cpp.s
+
+src/ros_assignments/state_machine_querry.o: src/ros_assignments/state_machine_querry.cpp.o
+.PHONY : src/ros_assignments/state_machine_querry.o
+
+# target to build an object file
+src/ros_assignments/state_machine_querry.cpp.o:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine_querry.dir/build.make ros_assignments/CMakeFiles/state_machine_querry.dir/src/ros_assignments/state_machine_querry.cpp.o
+.PHONY : src/ros_assignments/state_machine_querry.cpp.o
+
+src/ros_assignments/state_machine_querry.i: src/ros_assignments/state_machine_querry.cpp.i
+.PHONY : src/ros_assignments/state_machine_querry.i
+
+# target to preprocess a source file
+src/ros_assignments/state_machine_querry.cpp.i:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine_querry.dir/build.make ros_assignments/CMakeFiles/state_machine_querry.dir/src/ros_assignments/state_machine_querry.cpp.i
+.PHONY : src/ros_assignments/state_machine_querry.cpp.i
+
+src/ros_assignments/state_machine_querry.s: src/ros_assignments/state_machine_querry.cpp.s
+.PHONY : src/ros_assignments/state_machine_querry.s
+
+# target to generate assembly for a file
+src/ros_assignments/state_machine_querry.cpp.s:
+	cd /home/cristi/assignments/build && $(MAKE) -f ros_assignments/CMakeFiles/state_machine_querry.dir/build.make ros_assignments/CMakeFiles/state_machine_querry.dir/src/ros_assignments/state_machine_querry.cpp.s
+.PHONY : src/ros_assignments/state_machine_querry.cpp.s
+
 src/ros_assignments/triangle_generator.o: src/ros_assignments/triangle_generator.cpp.o
 .PHONY : src/ros_assignments/triangle_generator.o
 
@@ -583,7 +725,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... _ros_assignments_generate_messages_check_deps_InputService"
 	@echo "... _ros_assignments_generate_messages_check_deps_ServiceCall"
+	@echo "... _ros_assignments_generate_messages_check_deps_StateService"
 	@echo "... averager"
 	@echo "... constant_changer"
 	@echo "... constant_generator"
@@ -607,6 +751,9 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... square_generator"
+	@echo "... state_machine"
+	@echo "... state_machine_input"
+	@echo "... state_machine_querry"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
@@ -624,6 +771,15 @@ help:
 	@echo "... src/ros_assignments/square_generator.o"
 	@echo "... src/ros_assignments/square_generator.i"
 	@echo "... src/ros_assignments/square_generator.s"
+	@echo "... src/ros_assignments/state_machine.o"
+	@echo "... src/ros_assignments/state_machine.i"
+	@echo "... src/ros_assignments/state_machine.s"
+	@echo "... src/ros_assignments/state_machine_input.o"
+	@echo "... src/ros_assignments/state_machine_input.i"
+	@echo "... src/ros_assignments/state_machine_input.s"
+	@echo "... src/ros_assignments/state_machine_querry.o"
+	@echo "... src/ros_assignments/state_machine_querry.i"
+	@echo "... src/ros_assignments/state_machine_querry.s"
 	@echo "... src/ros_assignments/triangle_generator.o"
 	@echo "... src/ros_assignments/triangle_generator.i"
 	@echo "... src/ros_assignments/triangle_generator.s"

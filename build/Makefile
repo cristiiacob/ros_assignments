@@ -241,6 +241,19 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
+# Target rules for targets named _ros_assignments_generate_messages_check_deps_InputService
+
+# Build rule for target.
+_ros_assignments_generate_messages_check_deps_InputService: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ros_assignments_generate_messages_check_deps_InputService
+.PHONY : _ros_assignments_generate_messages_check_deps_InputService
+
+# fast build rule for target.
+_ros_assignments_generate_messages_check_deps_InputService/fast:
+	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_InputService.dir/build
+.PHONY : _ros_assignments_generate_messages_check_deps_InputService/fast
+
+#=============================================================================
 # Target rules for targets named _ros_assignments_generate_messages_check_deps_ServiceCall
 
 # Build rule for target.
@@ -252,6 +265,19 @@ _ros_assignments_generate_messages_check_deps_ServiceCall: cmake_check_build_sys
 _ros_assignments_generate_messages_check_deps_ServiceCall/fast:
 	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_ServiceCall.dir/build
 .PHONY : _ros_assignments_generate_messages_check_deps_ServiceCall/fast
+
+#=============================================================================
+# Target rules for targets named _ros_assignments_generate_messages_check_deps_StateService
+
+# Build rule for target.
+_ros_assignments_generate_messages_check_deps_StateService: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _ros_assignments_generate_messages_check_deps_StateService
+.PHONY : _ros_assignments_generate_messages_check_deps_StateService
+
+# fast build rule for target.
+_ros_assignments_generate_messages_check_deps_StateService/fast:
+	$(MAKE) -f ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/build.make ros_assignments/CMakeFiles/_ros_assignments_generate_messages_check_deps_StateService.dir/build
+.PHONY : _ros_assignments_generate_messages_check_deps_StateService/fast
 
 #=============================================================================
 # Target rules for targets named averager
@@ -475,6 +501,45 @@ square_generator/fast:
 .PHONY : square_generator/fast
 
 #=============================================================================
+# Target rules for targets named state_machine
+
+# Build rule for target.
+state_machine: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 state_machine
+.PHONY : state_machine
+
+# fast build rule for target.
+state_machine/fast:
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine.dir/build.make ros_assignments/CMakeFiles/state_machine.dir/build
+.PHONY : state_machine/fast
+
+#=============================================================================
+# Target rules for targets named state_machine_input
+
+# Build rule for target.
+state_machine_input: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 state_machine_input
+.PHONY : state_machine_input
+
+# fast build rule for target.
+state_machine_input/fast:
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine_input.dir/build.make ros_assignments/CMakeFiles/state_machine_input.dir/build
+.PHONY : state_machine_input/fast
+
+#=============================================================================
+# Target rules for targets named state_machine_querry
+
+# Build rule for target.
+state_machine_querry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 state_machine_querry
+.PHONY : state_machine_querry
+
+# fast build rule for target.
+state_machine_querry/fast:
+	$(MAKE) -f ros_assignments/CMakeFiles/state_machine_querry.dir/build.make ros_assignments/CMakeFiles/state_machine_querry.dir/build
+.PHONY : state_machine_querry/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -546,7 +611,9 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... _ros_assignments_generate_messages_check_deps_InputService"
 	@echo "... _ros_assignments_generate_messages_check_deps_ServiceCall"
+	@echo "... _ros_assignments_generate_messages_check_deps_StateService"
 	@echo "... averager"
 	@echo "... constant_changer"
 	@echo "... constant_generator"
@@ -564,6 +631,9 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... square_generator"
+	@echo "... state_machine"
+	@echo "... state_machine_input"
+	@echo "... state_machine_querry"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"

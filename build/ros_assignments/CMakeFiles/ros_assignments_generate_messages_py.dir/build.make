@@ -46,6 +46,8 @@ CMAKE_BINARY_DIR = /home/cristi/assignments/build
 include ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/progress.make
 
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_ServiceCall.py
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_InputService.py
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_StateService.py
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/__init__.py
 
 /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_ServiceCall.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
@@ -54,14 +56,30 @@ ros_assignments/CMakeFiles/ros_assignments_generate_messages_py: /home/cristi/as
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV ros_assignments/ServiceCall"
 	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv
 
+/home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_InputService.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_InputService.py: /home/cristi/assignments/src/ros_assignments/srv/InputService.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV ros_assignments/InputService"
+	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/cristi/assignments/src/ros_assignments/srv/InputService.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv
+
+/home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_StateService.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_StateService.py: /home/cristi/assignments/src/ros_assignments/srv/StateService.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV ros_assignments/StateService"
+	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/cristi/assignments/src/ros_assignments/srv/StateService.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv
+
 /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/__init__.py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_ServiceCall.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles $(CMAKE_PROGRESS_2)
+/home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/__init__.py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_InputService.py
+/home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/__init__.py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_StateService.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for ros_assignments"
 	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv --initpy
 
 ros_assignments_generate_messages_py: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py
 ros_assignments_generate_messages_py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_ServiceCall.py
+ros_assignments_generate_messages_py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_InputService.py
+ros_assignments_generate_messages_py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/_StateService.py
 ros_assignments_generate_messages_py: /home/cristi/assignments/devel/lib/python2.7/dist-packages/ros_assignments/srv/__init__.py
 ros_assignments_generate_messages_py: ros_assignments/CMakeFiles/ros_assignments_generate_messages_py.dir/build.make
 .PHONY : ros_assignments_generate_messages_py

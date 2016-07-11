@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "ros_assignments: 0 messages, 1 services")
+message(STATUS "ros_assignments: 0 messages, 3 services")
 
 set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
@@ -20,6 +20,16 @@ add_custom_target(_ros_assignments_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_assignments" "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv" ""
 )
 
+get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv" NAME_WE)
+add_custom_target(_ros_assignments_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_assignments" "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv" ""
+)
+
+get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv" NAME_WE)
+add_custom_target(_ros_assignments_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ros_assignments" "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv" ""
+)
+
 #
 #  langs = gencpp;genlisp;genpy
 #
@@ -30,6 +40,18 @@ add_custom_target(_ros_assignments_generate_messages_check_deps_${_filename}
 ### Generating Services
 _generate_srv_cpp(ros_assignments
   "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ros_assignments
+)
+_generate_srv_cpp(ros_assignments
+  "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ros_assignments
+)
+_generate_srv_cpp(ros_assignments
+  "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ros_assignments
@@ -49,6 +71,10 @@ add_dependencies(ros_assignments_generate_messages ros_assignments_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv" NAME_WE)
 add_dependencies(ros_assignments_generate_messages_cpp _ros_assignments_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv" NAME_WE)
+add_dependencies(ros_assignments_generate_messages_cpp _ros_assignments_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv" NAME_WE)
+add_dependencies(ros_assignments_generate_messages_cpp _ros_assignments_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(ros_assignments_gencpp)
@@ -63,6 +89,18 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ros_assignments_generate_messages_c
 ### Generating Services
 _generate_srv_lisp(ros_assignments
   "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ros_assignments
+)
+_generate_srv_lisp(ros_assignments
+  "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ros_assignments
+)
+_generate_srv_lisp(ros_assignments
+  "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ros_assignments
@@ -82,6 +120,10 @@ add_dependencies(ros_assignments_generate_messages ros_assignments_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv" NAME_WE)
 add_dependencies(ros_assignments_generate_messages_lisp _ros_assignments_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv" NAME_WE)
+add_dependencies(ros_assignments_generate_messages_lisp _ros_assignments_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv" NAME_WE)
+add_dependencies(ros_assignments_generate_messages_lisp _ros_assignments_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(ros_assignments_genlisp)
@@ -100,6 +142,18 @@ _generate_srv_py(ros_assignments
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ros_assignments
 )
+_generate_srv_py(ros_assignments
+  "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ros_assignments
+)
+_generate_srv_py(ros_assignments
+  "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ros_assignments
+)
 
 ### Generating Module File
 _generate_module_py(ros_assignments
@@ -114,6 +168,10 @@ add_dependencies(ros_assignments_generate_messages ros_assignments_generate_mess
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv" NAME_WE)
+add_dependencies(ros_assignments_generate_messages_py _ros_assignments_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/InputService.srv" NAME_WE)
+add_dependencies(ros_assignments_generate_messages_py _ros_assignments_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/cristi/assignments/src/ros_assignments/srv/StateService.srv" NAME_WE)
 add_dependencies(ros_assignments_generate_messages_py _ros_assignments_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

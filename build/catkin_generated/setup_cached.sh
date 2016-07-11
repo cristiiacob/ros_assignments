@@ -7,6 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CPATH="/home/cristi/assignments/devel/include:$CPATH"
 export PWD="/home/cristi/assignments/build"
-export PYTHONPATH="/home/cristi/assignments/devel/lib/python2.7/dist-packages:$PYTHONPATH"

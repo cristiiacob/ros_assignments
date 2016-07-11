@@ -46,6 +46,8 @@ CMAKE_BINARY_DIR = /home/cristi/assignments/build
 include ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/progress.make
 
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp: /home/cristi/assignments/devel/include/ros_assignments/ServiceCall.h
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp: /home/cristi/assignments/devel/include/ros_assignments/InputService.h
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp: /home/cristi/assignments/devel/include/ros_assignments/StateService.h
 
 /home/cristi/assignments/devel/include/ros_assignments/ServiceCall.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/cristi/assignments/devel/include/ros_assignments/ServiceCall.h: /home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv
@@ -55,8 +57,26 @@ ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp: /home/cristi/a
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from ros_assignments/ServiceCall.srv"
 	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/include/ros_assignments -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/cristi/assignments/devel/include/ros_assignments/InputService.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/cristi/assignments/devel/include/ros_assignments/InputService.h: /home/cristi/assignments/src/ros_assignments/srv/InputService.srv
+/home/cristi/assignments/devel/include/ros_assignments/InputService.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/cristi/assignments/devel/include/ros_assignments/InputService.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from ros_assignments/InputService.srv"
+	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/cristi/assignments/src/ros_assignments/srv/InputService.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/include/ros_assignments -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/cristi/assignments/devel/include/ros_assignments/StateService.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/cristi/assignments/devel/include/ros_assignments/StateService.h: /home/cristi/assignments/src/ros_assignments/srv/StateService.srv
+/home/cristi/assignments/devel/include/ros_assignments/StateService.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/cristi/assignments/devel/include/ros_assignments/StateService.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from ros_assignments/StateService.srv"
+	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/cristi/assignments/src/ros_assignments/srv/StateService.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/include/ros_assignments -e /opt/ros/indigo/share/gencpp/cmake/..
+
 ros_assignments_generate_messages_cpp: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp
 ros_assignments_generate_messages_cpp: /home/cristi/assignments/devel/include/ros_assignments/ServiceCall.h
+ros_assignments_generate_messages_cpp: /home/cristi/assignments/devel/include/ros_assignments/InputService.h
+ros_assignments_generate_messages_cpp: /home/cristi/assignments/devel/include/ros_assignments/StateService.h
 ros_assignments_generate_messages_cpp: ros_assignments/CMakeFiles/ros_assignments_generate_messages_cpp.dir/build.make
 .PHONY : ros_assignments_generate_messages_cpp
 

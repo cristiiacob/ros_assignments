@@ -46,6 +46,8 @@ CMAKE_BINARY_DIR = /home/cristi/assignments/build
 include ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/progress.make
 
 ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp: /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/ServiceCall.lisp
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp: /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/InputService.lisp
+ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp: /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/StateService.lisp
 
 /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/ServiceCall.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/ServiceCall.lisp: /home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv
@@ -53,8 +55,22 @@ ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp: /home/cristi/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from ros_assignments/ServiceCall.srv"
 	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/cristi/assignments/src/ros_assignments/srv/ServiceCall.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv
 
+/home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/InputService.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/InputService.lisp: /home/cristi/assignments/src/ros_assignments/srv/InputService.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from ros_assignments/InputService.srv"
+	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/cristi/assignments/src/ros_assignments/srv/InputService.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv
+
+/home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/StateService.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/StateService.lisp: /home/cristi/assignments/src/ros_assignments/srv/StateService.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cristi/assignments/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from ros_assignments/StateService.srv"
+	cd /home/cristi/assignments/build/ros_assignments && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/cristi/assignments/src/ros_assignments/srv/StateService.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p ros_assignments -o /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv
+
 ros_assignments_generate_messages_lisp: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp
 ros_assignments_generate_messages_lisp: /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/ServiceCall.lisp
+ros_assignments_generate_messages_lisp: /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/InputService.lisp
+ros_assignments_generate_messages_lisp: /home/cristi/assignments/devel/share/common-lisp/ros/ros_assignments/srv/StateService.lisp
 ros_assignments_generate_messages_lisp: ros_assignments/CMakeFiles/ros_assignments_generate_messages_lisp.dir/build.make
 .PHONY : ros_assignments_generate_messages_lisp
 

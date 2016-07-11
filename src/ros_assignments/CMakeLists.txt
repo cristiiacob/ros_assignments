@@ -54,6 +54,8 @@ find_package(catkin REQUIRED COMPONENTS
  add_service_files(
    FILES
    ServiceCall.srv
+   InputService.srv 
+   StateService.srv
  )
 
 ## Generate actions in the 'action' folder
@@ -146,3 +148,15 @@ target_link_libraries(constant_generator ${catkin_LIBRARIES})
 add_executable(constant_changer src/${PROJECT_NAME}/constant_changer.cpp)
 add_dependencies(constant_changer ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(constant_changer ${catkin_LIBRARIES})
+
+add_executable(state_machine src/${PROJECT_NAME}/state_machine.cpp)
+add_dependencies(state_machine ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(state_machine ${catkin_LIBRARIES})
+
+add_executable(state_machine_querry src/${PROJECT_NAME}/state_machine_querry.cpp)
+add_dependencies(state_machine_querry ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(state_machine_querry ${catkin_LIBRARIES})
+
+add_executable(state_machine_input src/${PROJECT_NAME}/state_machine_input.cpp)
+add_dependencies(state_machine_input ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(state_machine_input ${catkin_LIBRARIES})
