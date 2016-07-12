@@ -18,14 +18,14 @@ class StateMachineInput
     	return client_;
     }
 		    
-	ros_assignments::StateService getService()
+	ros_assignments::InputService getService()
 	{
 		return srv_;
 	}
 	
 	void start()
    {
-	    client_ = nh_.serviceClient<ros_assignments::StateService>("/state_machine/input");
+	    client_ = nh_.serviceClient<ros_assignments::InputService>("/state_machine/input");
    }
 	
   private:
@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 	ros::init(argc, argv, "state_machine_input");
 	
 	ros::NodeHandle nh;
-	StateMachineQuerry my_input(nh);
+	StateMachineInput my_input(nh);
 	
 	try
 	{
@@ -56,7 +56,7 @@ int main(int argc, char **argv)
 		
 	srv.request.input = argv[1];
 	
-	ROS_INFO("Input to be transmitted: %s",srv.request.input);
+	ROS_INFO("Input to be transmitted: %s",srv.request.input.c_str());
 	ROS_INFO("Ready to send input");
 		
 	try
