@@ -1,8 +1,0 @@
-prefix=/home/cristi/assignments/install
-
-Name: ros_assignments
-Description: Description of ros_assignments
-Version: 0.0.0
-Cflags: -I/home/cristi/assignments/install/include
-Libs: -L/home/cristi/assignments/install/lib 
-Requires: 

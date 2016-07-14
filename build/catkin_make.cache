@@ -1,2 +1,0 @@
-ros_assignments
--DCATKIN_DEVEL_PREFIX=/home/cristi/assignments/devel -DCMAKE_INSTALL_PREFIX=/home/cristi/assignments/install -G Unix Makefiles
