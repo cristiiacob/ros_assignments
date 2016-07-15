@@ -1,0 +1,19 @@
+<launch>
+
+<group ns="averager1">
+  <node pkg="ros_assignments" type="averager" name="averager" output="screen"/>
+</group>
+
+<group ns="averager2">
+  <node pkg="ros_assignments" type="averager" name="averager" output="screen"/>
+</group>
+
+<node pkg="ros_assignments" type="triangle_generator" name="triangle_generator" output="screen" >
+  <remap from="output" to="averager1/averager"/>
+</node>
+
+<node pkg="ros_assignments" type="square_generator" name="square_generator" output="screen" >
+  <remap from="output" to="averager2/averager"/>
+</node>
+
+</launch>
