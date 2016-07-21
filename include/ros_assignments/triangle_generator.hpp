@@ -1,7 +1,7 @@
 #ifndef ROS_ASSIGNMENTS_TRIANGLE_GENERATOR_HPP
 #define ROS_ASSIGNMENTS_TRIANGLE_GENERATOR_HPP
 
-#include <exception>
+#include <stdexcept>
 
 namespace ros_assignments
 {
@@ -9,14 +9,14 @@ namespace ros_assignments
   {
     public:
       TriangleGenerator(float amplitude = 1.0, double increment = 0.1,
-          float epsilon = 0.005) : 
+          float epsilon = 0.005) :
         amplitude_(amplitude), increment_(increment), epsilon_(epsilon)
       {
         reset();
       }
 
       ~TriangleGenerator() {}
-  
+
       float current_value() const
       {
         check_parameters();

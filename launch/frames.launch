@@ -1,0 +1,12 @@
+<launch>
+
+  <node pkg="tf" type="static_transform_publisher" name="world_to_r_base" 
+	args="0 0 0 0 0 0 1 world r_base 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="r_base_to_r_torso" 
+	args="1 2 0 0 0 0 1 r_base r_torso 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="r_torso_to_r_arm" 
+	args="6.5 4 0 0 0 0 1 r_torso r_arm 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="r_arm_to_r_hand" 
+	args="12 2 0 0 0 0 1 r_arm r_hand 100"/>
+
+</launch>

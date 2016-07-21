@@ -1,26 +1,26 @@
 #ifndef ROS_ASSIGNMENTS_SQUARE_GENERATOR_HPP
 #define ROS_ASSIGNMENTS_SQUARE_GENERATOR_HPP
 
-#include <exception>
+#include <stdexcept>
 
 namespace ros_assignments
 {
   class SquareGenerator
   {
     public:
-      SquareGenerator(float amplitude = 1.0, float last_value = 0.0, float epsilon = 0.05, int time_stamp = 0) : 
+      SquareGenerator(float amplitude = 1.0, float last_value = 0.0, float epsilon = 0.05, int time_stamp = 0) :
         amplitude_(amplitude), time_stamp_(time_stamp), epsilon_(epsilon), last_value_(last_value)
       {}
 
       ~SquareGenerator() {}
-      
+
       float current_value() const
       {
         check_parameters();
-        
+
         float result;
         result = last_value_;
-        
+
         if ((time_stamp_%10) == 0 && result < epsilon_)
         {
           result = amplitude_;
@@ -29,7 +29,7 @@ namespace ros_assignments
         {
           result = 0.0;
         }
-         
+
         return result;
       }
 
@@ -40,7 +40,7 @@ namespace ros_assignments
       }
 
       void step_forward()
-      {	
+      {
     	float value = current_value();
         last_value_ = value;
         time_stamp_++;

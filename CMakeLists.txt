@@ -3,8 +3,10 @@ project(ros_assignments)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
+  tf
   std_msgs
   message_generation
+  geometry_msgs
 )
 
 add_service_files(
@@ -12,11 +14,13 @@ add_service_files(
   ServiceCall.srv
   InputService.srv 
   StateService.srv
+  TransformService.srv
 )
 
 generate_messages(
   DEPENDENCIES
   std_msgs
+  geometry_msgs
 )
 
 catkin_package(
@@ -76,11 +80,20 @@ target_link_libraries(state_machine_input ${catkin_LIBRARIES})
 
 set(TEST_SRCS
   test/main.cpp
-  test/${PROJECT_NAME}/triangle_generator.cpp
+  test/${PROJECT_NAME}/triangle_generator.cpp 
+#  test/${PROJECT_NAME}/square_generator.cpp
 )
 
 catkin_add_gtest(${PROJECT_NAME}-test ${TEST_SRCS})
 if(TARGET ${PROJECT_NAME}-test)
   target_link_libraries(${PROJECT_NAME}-test ${catkin_LIBRARIES} ${YAML_CPP_LIBRARIES})
 endif()
+
+add_executable(transform_client src/${PROJECT_NAME}/transform_client.cpp)
+add_dependencies(transform_client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(transform_client ${catkin_LIBRARIES})
+
+add_executable(transform_listener src/${PROJECT_NAME}/transform_listener.cpp)
+add_dependencies(transform_listener ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(transform_listener ${catkin_LIBRARIES})
 
